@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feladat 5</title>
+
+    <style>
+        body {
+            background-image: url(feladat5/wallpaper.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        img {
+            width: 30%;
+
+            margin-left: 30px;
+
+        }
+
+        .rounded_img {
+            border-radius: 20px;
+
+        }
+
+        .circle_img {
+            border-radius: 1000px;
+
+        }
+
+        .shadow_img {
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            border-radius: 20%;
+            box-shadow: 10px 5px 15px red;
+        }
+
+        .frame_img {
+            border-style: solid;
+            border-width: 10px;
+            border-color: rgba(120, 29, 160, 0.3);
+            border-radius: 20%;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-top: 4px;
+            padding-bottom: 15px;
+        }
+
+        .profile {
+            border-style: double;
+            width: 250px;
+            display: inline-block;
+            box-shadow: 10px 5px 15px red;
+        }
+
+        .catname {
+            color: azure;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .catage {
+            color: rgb(155, 194, 187);
+            font-size: 20px;
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .catbutton {
+            background-color: rgb(90, 129, 163);
+            color: rgb(193, 149, 235);
+            font-size: 20px;
+            margin-left: 40px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .cat_picture {
+            width: 200px;
+            margin-left: 25px;
+            margin-top: 10px;
+            border-radius: 20%;
+            box-shadow: 5px 2px 5px rgb(193, 149, 235) ;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="feladat5/cat.avif" alt="cat image">
+    <img class="rounded_img" src="feladat5/cat.avif" alt="cat image">
+    <img class="shadow_img" src="feladat5/cat.avif" alt="cat image">
+    <img class="circle_img" src="feladat5/cat.avif" alt="cat image">
+    <img class="frame_img" src="feladat5/cat.avif" alt="cat image">
+
+    <div class="profile">
+        <img class="cat_picture" src="feladat5/cat.avif" alt="cat image">
+        <p class="catname">Cilike</p>
+        <p class="catage">fél éves</p>
+        <button class="catbutton">Örökbe fogadom</button>
+    </div>
+
+    <br><br><br><br><br><br>
+    Kép méretének változtatása inline
+    <br>
+    <img style="width: 45%; height: 15%;" src="feladat5/cat.avif" alt="cat image">
+
+    <br><br><br><br>
+
+    <img style="height: 15%; width: 25%; border-radius: 100%;" src="feladat5b/cat.avif" alt="cat image">
+</body>
+
+</html>

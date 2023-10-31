@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function daySelected(day) {
+            document.getElementById("resulttext").textContent = "Nem talált!";
+            document.getElementById(day).style.color = 'red';
+        }
+
+        function yearSelected(year) {
+            document.getElementById("resulttext").textContent = "Hurrá megtaláltad!";
+            document.getElementById(year).style.color = 'green';
+        } 
+    </script>
+</head>
+
+<body>
+    <p id="resulttext">Click on one of the buttons
+        bellow.</p>
+
+    <button id="Monday"
+        onclick=daySelected('Monday')>Click
+        me!</button>
+    <button id="Tuesday"
+        onclick=daySelected('Tuesday')>Click
+        me!</button>
+    <button id="Wednesday"
+        onclick=daySelected('Wednesday')>Click
+        me!</button>
+    <button id="Thursday"
+        onclick=daySelected('Thursday')>Click
+        me!</button>
+    <button id="Friday"
+        onclick=daySelected('Friday')>Click
+        me!</button>
+    <button id="Saturday"
+        onclick=daySelected('Saturday')>Click
+        me!</button>
+    <button id="Sunday"
+        onclick=daySelected('Sunday')>Click
+        me!</button>
+
+    <br>
+    <button id="actualyear"
+        onclick=yearSelected('2023')>Click
+        me!</button>
+
+    <button id="Tuesday"
+        onclick=daySelected('Tuesday')>Click
+        me!</button>
+    <button id="Wednesday"
+        onclick=daySelected('Wednesday')>Click
+        me!</button>
+    <button id="Thursday"
+        onclick=daySelected('Thursday')>Click
+        me!</button>
+    <button id="Friday"
+        onclick=daySelected('Friday')>Click
+        me!</button>
+    <button id="Saturday"
+        onclick=daySelected('Saturday')>Click
+        me!</button>
+    <button id="Sunday"
+        onclick=daySelected('Sunday')>Click
+        me!</button>
+</body>
+
+</html>
