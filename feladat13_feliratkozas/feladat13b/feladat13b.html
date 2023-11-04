@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyakorlat 13</title>
+
+    <script src="feladat13b.js"></script>
+ 
+</head>
+<body>
+    <form action="">
+
+        <fieldset style="width: 30px;">
+        <h3> Feliratkozom a hírlevélre</h3>
+            <label>keresztnév: </label>
+            <input id="name" type="text">
+        
+        <br><br>
+        
+            <label>email: </label>
+            <input id="email" type="text">
+        
+            <br><br>
+        
+            <button
+                id="subscribe" onclick="
+                
+                subscMessage(
+                    document.getElementById('name').value,
+                    document.getElementById('email').value
+                    )">Küldés
+            </button>
+            
+        
+        </fieldset>
+    </form>
+</body>
+</html>

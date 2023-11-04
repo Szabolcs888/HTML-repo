@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Gyakorlat 14</title>
+
+    <script src="feladat14_wsh.js"></script>
+    <link rel="stylesheet" href="feladat14_wsh.css" />
+
+
+</head>
+
+<body>
+    <form action="">
+
+        <fieldset style="width: 280px;">
+            <h3> Számlázási és szállítási adatok</h3>
+            <label>Név: </label>
+            <input id="name" type="text">
+
+            <br><br>
+
+            <label>E-mail: </label>
+            <input id="email" type="text">
+
+            <br><br><br><br>
+
+            <label style="font-size: 18px;">Szállítási cím: </label>
+            <br><br>
+
+            <label>település: </label>
+
+            <input id="telepules" type="text">
+
+            <br><br>
+
+            <label>utca, hsz.: </label>
+            <input id="utca" type="text">
+
+            <br><br>
+
+            <button id="subscribe" onclick="
+                
+                subscMessage(
+                    document.getElementById('name').value,
+                    document.getElementById('email').value,
+                    document.getElementById('telepules').value,
+                    document.getElementById('utca').value,
+                    )">Küldés
+            </button>
+
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
