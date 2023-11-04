@@ -13,7 +13,19 @@ fieldset {
     padding-left: 100px;
     padding-top: 4px;
     padding-bottom: 15px;
-    margin-left: 380px;
+    margin-left: 460px;
     margin-top: 10%;
-    box-shadow: 10px 5px 15px red;
+    box-shadow: 10px 15px 55px rgb(255, 0, 157);
+}
+
+label {
+    border-style: double;
+        border-radius: 10%;
+}
+
+#fejlec {
+text-align: center; 
+margin-top: 5%;
+font-family:'Lucida Sans Unicode'; font-size:17mm; 
+color: rgb(139, 38, 207);
 }
