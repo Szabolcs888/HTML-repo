@@ -1,3 +1,3 @@
-function subscMessage(name, email) {
+function subscMessage() {
     alert('Sikeresen feliratkoztál a hírlevélre!')
 }

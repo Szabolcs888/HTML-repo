@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>12. feladat</title>
+</head>
+
+<body>
+    <br>
+    <!--Navigálás új oldalra input html elemenettel. Előfeltétele,
+            hogy form tag-ek között legyen, amiben az action attributum ki van
+            töltve-->
+    <form action="https://www.pontosido.com/">
+        <input type="submit"
+            value="Navigate to actual time here with Submit the form">
+
+    </form>
+
+    <form action="https://www.pontosido.com/" target="_blank">
+        <input type="submit"
+            value="Navigate to actual time on a new tab with Submit the form">
+    </form>
+    <br>
+
+    <!-- Navigálás új oldalra button html elemenettel-->
+
+    <button
+        onclick="window.open('https://www.pontosido.com/','_self')">Navigate
+        to
+        actual time here
+    </button>
+    <br>
+    <button class="dogbutton"
+        onclick="document.location='https://www.pontosido.com/'">Navigate
+        to
+        actual time here</button>
+    <br>
+    <button
+        onclick="window.open('https://pontosido.com','_blank')">Navigate
+        to
+        actual time on a new tab
+    </button>
+
+    <br><br><br>
+
+    <!-- A dátum és idő megjelenítése is a feladat része volt, de nem különösebben tartozik a gombokhoz-->
+    <form action="https://www.pontosido.com/">
+        <input type="date" name="" id="">
+        <input type="time" name="" id="">
+    </form>
+    <br><br>
+
+</body>
+
+</html>

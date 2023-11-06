@@ -4,13 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>15c feladat</title>
+    <title>15/3</title>
+    
+    <style>
+        .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+    
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+        }
+    
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
 </head>
 <body>
-    <a href="feladat15_wsh.html">
-        <img src="feladat15_wsh/webshop.png" alt="fénykép" width="40"
+    <a href="feladat15_wsh.html" title="Vissza a főoldalra">
+        <img src="feladat15_wsh+tooltips/webshop.png" alt="fénykép"
+            width="40"
             height="40"></a>
 
     <h2>Köszönjük, hogy regisztrált, most már vásárolhat!</h2>
+<a class="tooltip" href="feladat15_wsh.html">
+    <img src="feladat15_wsh+tooltips/webshop.png" alt="fénykép"
+        width="40" height="40">
+    <span class="tooltiptext">Vissza a főoldalra</span>
+    <br><br>
+</a>
+<a href="feladat15_wsh.html" title="Vissza a főoldalra">Vissza a
+    főoldalra</a>
+
 </body>
 </html>
