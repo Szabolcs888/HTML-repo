@@ -14,7 +14,6 @@
             background-repeat: no-repeat;
             background-size: cover;
             height: 100vh;
-
         }
 
         .textCenter {
@@ -39,11 +38,8 @@
             border: 3px solid green;
         }
 
-        p {
-            text-align: center;
-        }
-
         fieldset {
+            
             border-style: double;
             border-radius: 10%;
             background-color: rgb(224, 205, 226);
@@ -56,6 +52,11 @@
             margin-right: auto;
            
             box-shadow: 10px 15px 55px rgb(51, 81, 121);
+        }
+
+        .easter_egg_area{
+            width: 50px;
+            height: 50px;
         }
     </style>
 </head>
@@ -75,11 +76,9 @@
         style="font-family:'Lucida Sans Unicode'; font-size:17mm; color: rgb(146, 70, 197);">
         a Bambino játékáruház webshopjában!</h2>
 
-
-
     <fieldset>
-        <label for="">
-            <p style="font-weight: 800; font-size: 230%;">A
+        <label class="textCenter">
+            <p style="font-weight: 800; font-size: 200%;">A
                 vásárláshoz
                 regisztráció szükséges.
             Kérjük, a regisztrációhoz kattintson az alábbi gombra!</p>
@@ -91,8 +90,10 @@
     </fieldset>
 
 
-    <br><br><br>
+    <div class="easter_egg_area"
+        onclick="window.open('Aboutme.html','_self')">
 
+</div>
 
 </body>
 

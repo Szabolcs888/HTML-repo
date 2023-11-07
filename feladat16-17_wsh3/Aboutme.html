@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>17. feladat_About me</title>
+
+    <script src="Aboutme_darkmode.js"></script>
+    <link rel="stylesheet" href="Aboutme_darkmode.css" />
+
+</head>
+
+<body>
+
+    <div class="button-container">
+        <button class="toybutton" style="width: 260px; background-color: rgb(43, 128, 226);"
+            onclick="document.location='feladat16_1_reg.html'">Vissza
+            az
+            előző oldalra
+        </button>
+
+        <button id="btn" type="button"
+            onclick="darkModeChanger()">Éjszakai
+            mód </button>
+    </div>
+
+    <div
+        style="text-align: center; font-family:'Lucida Sans Unicode'; font-size:09mm; color: rgb(38, 41, 207);">
+        <h1>Rövid bemutatkozás</h1>
+    </div>
+
+    <div class="container">
+        <div class="image">
+            <img src="feladat16_wsh/portre.JPG">
+        </div>
+
+        <div class="text">
+            <p>Kedves Látogató! Szigli Szabolcs vagyok. Szeretem
+                Magyarországot és
+                jelenleg egy kis faluban (Sárszentmihályon)
+                élek, de éltem már Szegeden és Székesfehérváron is.
+
+                <br>
+                <br>
+
+                Szeretek sportolni és a természet közelében lenni, és
+                különösen szeretem az állatokat és a gyerekeket.
+                Nagyon vágyom már egy szép családra.
+
+                A reál érdeklődésem mellett erős a humán vénám is.
+                Szeretem
+                tanulmányozni a történelmet, az irodalmat és a
+                vallásokat. Sokat
+                olvasok - többek között vallásfilozófiát, vallásos
+                könyveket,
+                történelmi műveket és szépirodalmat.
+
+                <br>
+                <br>
+
+                Jelenleg szakmát váltok, szoftvertesztelést tanulok,
+                mert magamhoz testhezállónak érzem, de az IT-n belül a
+                szoftverfejlesztés is nagyon érdekel. Idővel lehet,
+                hogy váltani fogok, de jelenleg az a legfőbb célom,
+                hogy belépjek ebbe a világba.
+
+                <br>
+                <br>
+
+                Többet nagyon nem is szeretnék nyilvánosan elárulni, de a számomra legkedvesebb műveket felsorolom.  
+            </p>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    </div>
+    <table border="3">
+        <br><br><br>
+        <thead>
+            <tr>
+                <th colspan="2"
+                    style="background-color:rgb(99, 164, 202); height: 50px;">
+                    &nbsp&nbsp&nbsp&nbsp&nbspKedvenc szépirodalmi
+                    műveim:&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+            </tr>
+        </thead>
+        <tr
+            style="background-color:rgb(134, 169, 189);font-style: italic; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+            <td>&nbsp&nbsp&nbspSzerző&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            </td>
+            <td>&nbsp&nbsp&nbspA mű címe&nbsp&nbsp&nbsp
+            </td>
+
+        </tr>
+        <tr>
+            <td>&nbsp&nbsp&nbspMihail Afanaszjevics
+                Bulgakov&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+            <td>&nbsp&nbsp&nbspA Mester és Margarita&nbsp&nbsp&nbsp
+            </td>
+
+        </tr>
+        <tr>
+            <td>&nbsp&nbsp&nbspDaniel Keyes</td>
+            <td>&nbsp&nbsp&nbspVirágot Algernonnak</td>
+
+        </tr>
+        <tr>
+            <td>&nbsp&nbsp&nbspEric Knight</td>
+            <td>&nbsp&nbsp&nbspLégy hű magadhoz</td>
+        </tr>
+        <thead>
+            <tr>
+                <th colspan="2"
+                    style="background-color:rgb(99, 164, 202); height: 50px;">
+                    &nbsp&nbsp&nbsp&nbsp&nbspKedvenc magyar műveim
+                    (versek és könyvek
+                    vegyesen):&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+            </tr>
+        </thead>
+        <tr
+            style="background-color:rgb(134, 169, 189);font-style: italic; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+            <td>&nbsp&nbsp&nbspSzerző&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            </td>
+            <td>&nbsp&nbsp&nbspA mű címe&nbsp&nbsp&nbsp
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp&nbsp&nbspReményik
+                Sándor&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+            <td>&nbsp&nbsp&nbspEgy lélek állt...&nbsp&nbsp&nbsp
+            </td>
+
+        </tr>
+        <tr>
+            <td>&nbsp&nbsp&nbspKölcsey Ferenc</td>
+            <td>&nbsp&nbsp&nbspParainesis Kölcsey Kálmánhoz</td>
+
+        </tr>
+        <tr>
+            <td>&nbsp&nbsp&nbspJózsef Attila</td>
+            <td>&nbsp&nbsp&nbspKét hexameter</td>
+        </tr>
+        </thead>
+    </table>
+
+    <br><br><br><br>
+
+    <div
+        style="text-align: center; padding-left: auto; padding-right: auto;">
+        <h2>Amennyiben jobban meg szeretnél ismerni, <br>
+            kérlek iratkozz fel a hírlevelemre.</h2>
+    </div>
+
+    <form action="">
+        <fieldset>
+            <br><br>
+            <label>Név: </label>
+            <input id="name" type="text">
+
+            <label>&nbspE-mail: </label>
+            <input id="email" type="text">
+
+            <br><br>
+
+            <button class="toybutton" onclick="
+                                
+            subscMessage(
+                    document.getElementById('name').value,
+                    document.getElementById('email').value)">Küldés
+            </button>
+            <br><br>
+            <label>Üzenni is tudsz nekem </label>
+            <br>
+            <textarea name="" id="" cols="60" rows="15"></textarea>
+            <br><br>
+
+            <button class="toybutton" onclick="
+                                        
+            answerMessage(
+                    document.getElementById('name').value,
+                    document.getElementById('email').value)">Küldés
+            </button>
+            <br><br>
+        </fieldset>
+
+        <br><br>
+</body>
+
+</html>
