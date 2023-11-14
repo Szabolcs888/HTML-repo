@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <img src="images/card back.jpg" width="50" height="50">
+    <img src="hatter.jpg" width="50" height="50">
+
+
+    <img id="myImage" onclick="changeImage()"
+        src="images/card back.jpg" width="100" height="180">
+
+    <script>
+        function changeImage() {
+            var image = document.getElementById("myImage");
+            if (image.src.match("card back")) {
+                image.src = "images/Ace Spades.png";
+            } else {
+                image.src = "images/card back.jpg";
+            }
+        }
+    </script>
+</body>
+
+</html>

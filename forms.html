@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+
+
 </head>
 
 <body>
@@ -69,6 +71,9 @@
 
         <input type="range">
 
+        <input type="number" id="quantity" name="quantity" min="0" max="100"
+            step="10" value="30">
+
         <br><br>
 
         <select name="" id="">
@@ -80,10 +85,35 @@
 
         <br><br>
 
-
         <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br><br>
+        
+        <div>
+            <label for="avatar">Choose a profile picture:</label>
+            <input type="file" id="avatar" name="avatar"
+                accept="image/png, image/jpeg" />
+        </div>
+        
+        <br><br>
+        
+        <div>
+            <label for="file">Choose file to upload</label>
+            <input type="file" id="file" name="file" multiple />
+        </div>
+        
+        <br><br>
+        <!-- html comment out -->
+        <p>Choose your monster's colors:</p>
 
+<div>
+    <input type="color" id="head" name="head" value="#e66465" />
+    <label for="head">Head</label>
+</div>
 
+<div>
+    <input type="color" id="body" name="body" value="#f6b73c" />
+    <label for="body">Body</label>
+</div>
     </form>
 
 </body>

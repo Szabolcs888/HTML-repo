@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo">proba1</p>
+
+    <script>
+        const myParagraph = document.getElementById('demo');
+        myParagraph.textContent = "felülírja a 'Valami'-t";
+    </script>
+
+    <br>
+
+    <p id="demo2">proba2</p>
+
+    <button type="button"
+        onclick="document.getElementById('demo2').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+
+    <br><br>
+
+    <p id="demo3">proba3</p>
+
+    <button type="button"
+        onclick="document.getElementById('demo3').style.fontSize='35px'">Tulajdonság
+        felülírása</button>
+
+    <button type="button"
+        onclick="document.getElementById('demo3').style.color='blue'">Tulajdonság
+        felülírása</button>
+
+    <br><br>
+
+    <p id="demo4">Kattints egy üdvözlésért</p>
+    <button
+        onclick="document.getElementById('demo4').textContent='Hello world'">Script
+        indítás</button>
+
+
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Feladat8_bulb_on-off</title>
+
+    <script>
+        function bulbSwitch() {
+            if (document.getElementById("button").innerText == "Turn off the bulb") {
+                document.getElementById("bulbonimage").src =
+                    "feladat8/bulb-off.jpg";
+                document.getElementById("button").innerText = "Turn on the bulb";
+            } else {
+                document.getElementById("bulbonimage").src =
+                    'feladat8/bulb-on.gif';
+                document.getElementById("button").innerText = "Turn off the bulb";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <img id="bulbonimage" src="feladat8/bulb-on.gif" alt="bulb_on">
+
+    <br>
+
+    <button id="button" onclick="bulbSwitch()">Turn off the
+        bulb</button>
+
+
+</body>
+
+</html>
