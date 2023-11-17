@@ -1,213 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>16/4</title>
 
-    <script>function sellMessage() {
-            alert('Plusz 1 tétel került a kosárba')
-        }</script>
+    <script>
+      function sellMessage() {
+        alert("Plusz 1 tétel került a kosárba");
+      }
+    </script>
 
     <style>
-        body {
-            background-image: url(feladat16_wsh/sixteen_nine_large.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 280vh;
-            text-align: center;
+      body {
+        background-image: url(feladat16_wsh/sixteen_nine_large.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 280vh;
+        text-align: center;
 
-            background-attachment:fixed
-        }
+        background-attachment: fixed;
+      }
 
-        .profile {
+      .profile {
+        border-style: outset;
+        border-color: rgb(222, 203, 240);
+        border-radius: 10%;
+        width: 300px;
+        background-color: rgb(162, 138, 173);
+        margin-right: 2%;
+        margin-left: 3%;
+        margin-top: 5%;
 
-            border-style: outset;
-            border-color: rgb(222, 203, 240);
-            border-radius: 10%;
-            width: 300px;
-            background-color: rgb(162, 138, 173);
-            margin-right: 2%;
-            margin-left: 3%;
-            margin-top: 5%;
+        box-shadow: 20px 5px 45px rgb(56, 23, 202);
 
-            box-shadow: 20px 5px 45px rgb(56, 23, 202);
+        display: inline-block;
+      }
 
-            display: inline-block;
-        }
+      .toy_picture {
+        width: 250px;
+        margin-left: 2px;
+        margin-top: 15px;
+        border-radius: 20%;
+        box-shadow: 5px 2px 5px rgb(193, 149, 235);
+      }
 
-        .toy_picture {
-            width: 250px;
-            margin-left: 2px;
-            margin-top: 15px;
-            border-radius: 20%;
-            box-shadow: 5px 2px 5px rgb(193, 149, 235);
-        }
+      .toyname {
+        color: rgb(33, 70, 70);
+        font-size: 22px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
 
-        .toyname {
-            color: rgb(33, 70, 70);
-            font-size: 22px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-weight: bolder;
-            text-align: center;
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
+      .childage {
+        color: rgb(14, 100, 197);
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
 
-        .childage {
-            color: rgb(14, 100, 197);
-            font-size: 20px;
-            font-weight: bolder;
-            text-align: center;
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
+      .toybutton {
+        background-color: rgb(25, 106, 177);
+        color: rgb(205, 196, 214);
+        font-size: 20px;
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+      }
 
-        .toybutton {
-            background-color: rgb(25, 106, 177);
-            color: rgb(205, 196, 214);
-            font-size: 20px;
-            margin-left: 10px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            border-radius: 10px;
-        }
+      .price {
+        color: rgb(59, 100, 71);
+        font-size: 26px;
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
 
-        .price {
-            color: rgb(59, 100, 71);
-            font-size: 26px;
-            font-weight: bolder;
-            text-align: center;
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
+      table {
+        width: 24%;
+        height: 7%;
+        background-color: rgb(191, 192, 212);
+        margin-left: 13%;
+        font-size: 140%;
+      }
 
-        table {
-            width: 24%;
-            height: 7%;
-            background-color: rgb(191, 192, 212);
-            margin-left: 13%;
-            font-size: 140%;
-        }
+      td {
+        border: 2px solid #333;
+        font-weight: bolder;
+      }
 
-        td {
-            border: 2px solid #333;
-            font-weight: bolder;
-
-        }
-
-        thead, tfoot {
-            background-color: #333;
-            color: #fff;
-        }
+      thead,
+      tfoot {
+        background-color: #333;
+        color: #fff;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div
-        style="text-align: center; font-family:'Lucida Sans Unicode'; font-size:11mm; color: rgb(139, 38, 207);">
-        <h1>Üdvözöljük</h1>
+      style="
+        text-align: center;
+        font-family: 'Lucida Sans Unicode';
+        font-size: 11mm;
+        color: rgb(139, 38, 207);
+      "
+    >
+      <h1>Üdvözöljük</h1>
     </div>
 
     <h1>a Bambino játékáruház webshopjában!</h1>
 
-    <br>
+    <br />
 
     <div class="profile">
-        <img class="toy_picture" src="feladat16_wsh/jatek1.webp"
-            alt="toy image">
-        <p class="toyname">Mappy Toys interaktív babajáték</p>
-        <p class="childage">két hónapos kortól</p>
-        <p class="price">2500 ft</p>
-        <button class="toybutton" onclick="sellMessage()">Kosárba
-            rakom</button>
+      <img
+        class="toy_picture"
+        src="feladat16_wsh/jatek1.webp"
+        alt="toy image"
+      />
+      <p class="toyname">Mappy Toys interaktív babajáték</p>
+      <p class="childage">két hónapos kortól</p>
+      <p class="price">2500 ft</p>
+      <button class="toybutton" onclick="sellMessage()">Kosárba rakom</button>
     </div>
 
     <div class="profile">
-        <img class="toy_picture" src="feladat16_wsh/jatek2.webp"
-            alt="toy image">
-        <p class="toyname">Érzékelő vízszőnyeg babáknak</p>
-        <p class="childage">egy éves kortól</p>
-        <p class="price">2000 ft</p>
-        <button class="toybutton" onclick="sellMessage()">Kosárba
-            rakom</button>
+      <img
+        class="toy_picture"
+        src="feladat16_wsh/jatek2.webp"
+        alt="toy image"
+      />
+      <p class="toyname">Érzékelő vízszőnyeg babáknak</p>
+      <p class="childage">egy éves kortól</p>
+      <p class="price">2000 ft</p>
+      <button class="toybutton" onclick="sellMessage()">Kosárba rakom</button>
     </div>
 
     <div class="profile">
-        <img class="toy_picture" src="feladat16_wsh/jatek3.webp"
-            alt="toy image">
-        <p class="toyname">Játék kormánykerékkel való vezetéshez
-            gyerekeknek</p>
-        <p class="childage">két hónapos kortól</p>
-        <p class="price">3800 ft</p>
-        <button class="toybutton" onclick="sellMessage()">Kosárba
-            rakom</button>
+      <img
+        class="toy_picture"
+        src="feladat16_wsh/jatek3.webp"
+        alt="toy image"
+      />
+      <p class="toyname">Játék kormánykerékkel való vezetéshez gyerekeknek</p>
+      <p class="childage">két hónapos kortól</p>
+      <p class="price">3800 ft</p>
+      <button class="toybutton" onclick="sellMessage()">Kosárba rakom</button>
     </div>
 
     <div class="profile">
-        <img class="toy_picture" src="feladat16_wsh/jatek4.webp"
-            alt="toy image">
-        <p class="toyname">Smart Stages interaktív játék, Beszélő
-            kiskutya</p>
-        <p class="childage">fél éves kortól</p>
-        <p class="price">1650 ft</p>
-        <button class="toybutton" onclick="sellMessage()">Kosárba
-            rakom</button>
+      <img
+        class="toy_picture"
+        src="feladat16_wsh/jatek4.webp"
+        alt="toy image"
+      />
+      <p class="toyname">Smart Stages interaktív játék, Beszélő kiskutya</p>
+      <p class="childage">fél éves kortól</p>
+      <p class="price">1650 ft</p>
+      <button class="toybutton" onclick="sellMessage()">Kosárba rakom</button>
     </div>
 
     <div class="profile">
-        <img class="toy_picture" src="feladat16_wsh/jatek5.webp"
-            alt="toy image">
-        <p class="toyname">Zggzerg puha érzékszervi labda készlet</p>
-        <p class="childage">két hónapos kortól</p>
-        <p class="price">4200 ft</p>
-        <button class="toybutton" onclick="sellMessage()">Kosárba
-            rakom</button>
+      <img
+        class="toy_picture"
+        src="feladat16_wsh/jatek5.webp"
+        alt="toy image"
+      />
+      <p class="toyname">Zggzerg puha érzékszervi labda készlet</p>
+      <p class="childage">két hónapos kortól</p>
+      <p class="price">4200 ft</p>
+      <button class="toybutton" onclick="sellMessage()">Kosárba rakom</button>
     </div>
 
     <div class="profile">
-        <img class="toy_picture" src="feladat16_wsh/jatek6.webp"
-            alt="toy image">
-        <p class="toyname">Éneklő és táncoló kaktusz</p>
-        <p class="childage">fél éves kortól</p>
-        <p class="price">1900 ft</p>
-        <button class="toybutton" onclick="sellMessage()">Kosárba
-            rakom</button>
+      <img
+        class="toy_picture"
+        src="feladat16_wsh/jatek6.webp"
+        alt="toy image"
+      />
+      <p class="toyname">Éneklő és táncoló kaktusz</p>
+      <p class="childage">fél éves kortól</p>
+      <p class="price">1900 ft</p>
+      <button class="toybutton" onclick="sellMessage()">Kosárba rakom</button>
     </div>
 
-    <br><br><br><br>
+    <br /><br /><br /><br />
 
     <table>
-        <thead>
-            <tr>
-                <th colspan="2">&nbsp&nbsp&nbsp&nbsp&nbspKiszállítási
-                    díjtáblázat:&nbsp&nbsp&nbsp&nbsp&nbsp</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1-15000 ft-ig</td>
-                <td>2000 ft</td>
-            </tr>
-            <tr>
-                <td>15001 ft-tól</td>
-                <td>ingyenes</td>
-            </tr>
-        </tbody>
+      <thead>
+        <tr>
+          <th colspan="2">
+            &nbsp&nbsp&nbsp&nbsp&nbspKiszállítási
+            díjtáblázat:&nbsp&nbsp&nbsp&nbsp&nbsp
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1-15000 ft-ig</td>
+          <td>2000 ft</td>
+        </tr>
+        <tr>
+          <td>15001 ft-tól</td>
+          <td>ingyenes</td>
+        </tr>
+      </tbody>
     </table>
 
-<br>
+    <br />
 
-    <button class="toybutton" style="background-color: rgb(170, 87, 87) ;
-        height: 3%;"
-        onclick="document.location='feladat16_5_cart.html'">Irány a
-        kosárhoz</button>
+    <button
+      class="toybutton"
+      style="background-color: rgb(170, 87, 87); height: 3%"
+      onclick="document.location='feladat16_5_cart.html'"
+    >
+      Irány a kosárhoz
+    </button>
 
-    <br><br>
-
-</body>
-
+    <br /><br />
+  </body>
 </html>
